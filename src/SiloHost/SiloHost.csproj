@@ -25,9 +25,4 @@
     <ProjectReference Include="..\HelloWorld.Grains\HelloWorld.Grains.csproj" />
     <ProjectReference Include="..\HelloWorld.Interfaces\HelloWorld.Interfaces.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <None Update="Settings.job">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 </Project>
