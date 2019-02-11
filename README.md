@@ -1,6 +1,6 @@
 # OrleansIoT
 
-How To Run the Sample Application 
+How To Run the Sample Application (Map Reducer application to calculate the Mean total acceleration per second from AMPC raw data set)
 
 1. git clone the repository 
 2. Open the HelloWorld.sln from Visual Studio 
