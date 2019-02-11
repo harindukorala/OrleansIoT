@@ -12,11 +12,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Grains", "src\HelloWorld.Grains\HelloWorld.Grains.csproj", "{C8097F83-2D0E-4FFD-AEAE-AA075141289C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C202E56-5082-4C00-9438-E0DFAAEC9326}"
-	ProjectSection(SolutionItems) = preProject
-		BuildAndRun.ps1 = BuildAndRun.ps1
-		BuildAndRun.sh = BuildAndRun.sh
-		Readme.md = Readme.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

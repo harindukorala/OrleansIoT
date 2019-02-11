@@ -21,34 +21,6 @@ namespace HelloWorld.Grains
             this.logger = logger;
         }
 
-        public Task<Pairs> MapAsync(string document)
-        {
-            var items = from w in document.Trim('"').Split(' ', ',', ':', '.', ';','"')
-                        group 1 by w into g
-                        select new Pair(g.Key, g.Sum());
-
-            var newItem = from w in document.Trim('"').Split(',')
-                    select new Pair(w, 1);
-
-            var foo = (from w in document.Trim('"').Split(',')
-                       select w).First();
-
-            
-
-            List < Pair > test = new List<Pair>
-            {
-                new Pair(foo, 1)
-            };
-
-            //var test = document.Split(' ', ',', ':', '.', ';');
-            // var yu = test.First();
-            //var items3 = from w in document
-            //             group 1 by w into g
-            //             select new Pair(g.Key.ToString(), g.Count());
-            var result = new Pairs(test);
-            return Task.FromResult(result);
-        }
-
         public Task<AcceloDataPerSec> MapAccelo(string document)
         {
             string[] sada = document.Split(',');
@@ -70,12 +42,6 @@ namespace HelloWorld.Grains
             var result = new AcceloDataPerSec(accelo);
             return Task.FromResult(result);
 
-        }
-
-        Task<string> IMapper.SayHello(string greeting)
-        {
-            logger.LogInformation($"SayHello message received: greeting = '{greeting}'");
-            return Task.FromResult($"You said: '{greeting}', I say: Hello Mapper Bye!");
         }
     }
 }
