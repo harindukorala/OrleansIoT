@@ -1,4 +1,4 @@
-# TestOrleans
+# OrleansIoT
 
 How To Run the Sample Application 
 
