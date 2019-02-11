@@ -7,7 +7,7 @@ How To Run the Sample Application
 3. Build the Solution 
 4. Run Project Silo 
 5. Open a web browser and navigate to localhost:8080 for the Orleans Dashboard
-6. Oen a CMD 
+6. Open a CMD 
 7. Navigate to the projectlocation\src 
 8. Type the following command : dotnet run --project OrleansClient press Enter 
 
