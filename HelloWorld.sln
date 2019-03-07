@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Grains", "src\He
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C202E56-5082-4C00-9438-E0DFAAEC9326}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{1182399F-4374-4653-AA23-DEF3E056FB23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloCore", "SiloCore\SiloCore.csproj", "{7B4FA21D-D24E-45D7-B1ED-60D90EBE40BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{C8097F83-2D0E-4FFD-AEAE-AA075141289C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8097F83-2D0E-4FFD-AEAE-AA075141289C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8097F83-2D0E-4FFD-AEAE-AA075141289C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1182399F-4374-4653-AA23-DEF3E056FB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1182399F-4374-4653-AA23-DEF3E056FB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1182399F-4374-4653-AA23-DEF3E056FB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1182399F-4374-4653-AA23-DEF3E056FB23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4FA21D-D24E-45D7-B1ED-60D90EBE40BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4FA21D-D24E-45D7-B1ED-60D90EBE40BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4FA21D-D24E-45D7-B1ED-60D90EBE40BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4FA21D-D24E-45D7-B1ED-60D90EBE40BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
