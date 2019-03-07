@@ -10,6 +10,7 @@ using Orleans.Hosting;
 using Orleans.Runtime;
 using Orleans.Statistics;
 using OrleansTelemetryConsumers.Counters;
+using SiloCore;
 
 namespace OrleansSiloHost
 {
@@ -52,6 +53,7 @@ namespace OrleansSiloHost
                 .Configure<EndpointOptions>(options => options.AdvertisedIPAddress = IPAddress.Loopback)
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(MapperTestGrain).Assembly).WithReferences())
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(Reducer).Assembly).WithReferences())
+                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(PlacementHolder).Assembly).WithReferences())
                 .ConfigureLogging(logging => logging.AddConsole())
                 .UsePerfCounterEnvironmentStatistics()
                                     .ConfigureServices(services =>

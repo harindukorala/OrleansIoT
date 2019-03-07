@@ -10,6 +10,8 @@ using System.Net;
 using System.IO;
 using System.Reflection;
 using Orleans.Hosting;
+using SiloCore;
+using Shared;
 
 namespace OrleansClient
 {
@@ -85,6 +87,11 @@ namespace OrleansClient
 
         private static async Task DoClientWork(IClusterClient client)
         {
+            var testPlacementHolder = client.GetGrain<IPlacementHolder>(Guid.NewGuid());
+            SiloAddress test = await testPlacementHolder.GetSiloAddress(0);
+
+            Console.WriteLine("Silo Address :",test);
+
             var reducerActor = client.GetGrain<IReducer>(0);
             List<Task> forks = new List<Task>();
             List<string> myData = new List<string>();
