@@ -24,7 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\Shared.csproj" />
     <ProjectReference Include="..\..\SiloCore\SiloCore.csproj" />
-    <ProjectReference Include="..\HelloWorld.Grains\HelloWorld.Grains.csproj" />
-    <ProjectReference Include="..\HelloWorld.Interfaces\HelloWorld.Interfaces.csproj" />
+    <ProjectReference Include="..\HelloWorld.Grains\Grains.csproj" />
+    <ProjectReference Include="..\HelloWorld.Interfaces\Interfaces.csproj" />
   </ItemGroup>
 </Project>

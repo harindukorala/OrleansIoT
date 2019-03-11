@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiloHost", "src\SiloHost\Si
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansClient", "src\OrleansClient\OrleansClient.csproj", "{18DFEAE0-0000-4EFF-825F-2150B0C509F8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Interfaces", "src\HelloWorld.Interfaces\HelloWorld.Interfaces.csproj", "{1977C291-BE23-415A-8305-9E6F7B23203D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "src\HelloWorld.Interfaces\Interfaces.csproj", "{1977C291-BE23-415A-8305-9E6F7B23203D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Grains", "src\HelloWorld.Grains\HelloWorld.Grains.csproj", "{C8097F83-2D0E-4FFD-AEAE-AA075141289C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grains", "src\HelloWorld.Grains\Grains.csproj", "{C8097F83-2D0E-4FFD-AEAE-AA075141289C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C202E56-5082-4C00-9438-E0DFAAEC9326}"
 EndProject

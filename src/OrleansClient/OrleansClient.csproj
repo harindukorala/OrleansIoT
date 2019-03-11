@@ -33,6 +33,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\Shared.csproj" />
     <ProjectReference Include="..\..\SiloCore\SiloCore.csproj" />
-    <ProjectReference Include="..\HelloWorld.Interfaces\HelloWorld.Interfaces.csproj" />
+    <ProjectReference Include="..\HelloWorld.Interfaces\Interfaces.csproj" />
   </ItemGroup>
 </Project>
