@@ -10,6 +10,7 @@ using Orleans.Hosting;
 using Orleans.Runtime;
 using Orleans.Statistics;
 using OrleansTelemetryConsumers.Counters;
+using Shared;
 using SiloCore;
 
 namespace OrleansSiloHost
@@ -61,7 +62,8 @@ namespace OrleansSiloHost
                                         // Workaround for https://github.com/dotnet/orleans/issues/4129
                                         services.AddSingleton(cp => cp.GetRequiredService<IHostEnvironmentStatistics>() as ILifecycleParticipant<ISiloLifecycle>);
                                     })
-                .AddMemoryGrainStorageAsDefault();
+                .AddMemoryGrainStorageAsDefault()
+                .AddStartupTask<MonitoringStartupTask>();
 
             var host = builder.Build();
             await host.StartAsync();
