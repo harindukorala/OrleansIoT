@@ -3,13 +3,11 @@
 How To Run the Sample Application (Map Reducer application to calculate the Mean total acceleration per second from AMPC raw data set)
 
 1. git clone the repository 
-2. Open the HelloWorld.sln from Visual Studio 
+2. Open the OrleansIoTPlatform.sln from Visual Studio 
 3. Build the Solution 
-4. Run Project Silo 
+4. Run Project SiloHost 
 5. Open a web browser and navigate to localhost:8080 for the Orleans Dashboard
-6. Open a CMD 
-7. Navigate to the projectlocation\src 
-8. Type the following command : dotnet run --project OrleansClient press Enter 
+6. Run Project OrleansClient
 
 (Default Configuration Settings : Silo and Client both running on the local machine)
 
