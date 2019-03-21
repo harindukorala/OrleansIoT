@@ -52,6 +52,7 @@ namespace OrleansSiloHost
                     options.ServiceId = "HelloWorldApp";
                 })
                 .Configure<EndpointOptions>(options => options.AdvertisedIPAddress = IPAddress.Loopback)
+                .AddPlacementDirector<PlacedPlacement, PlacedPlacementDirector>()
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(MapperTestGrain).Assembly).WithReferences())
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(Reducer).Assembly).WithReferences())
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(PlacementHolder).Assembly).WithReferences())
