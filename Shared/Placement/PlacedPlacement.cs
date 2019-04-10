@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shared
+namespace Shared.Placement
 {
     [Serializable]
     public class PlacedPlacement : PlacementStrategy

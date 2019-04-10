@@ -10,8 +10,8 @@ using Orleans.Hosting;
 using Orleans.Runtime;
 using Orleans.Statistics;
 using OrleansTelemetryConsumers.Counters;
-using Shared;
-using SiloCore;
+using Shared.Placement;
+using SiloCore.Placement;
 
 namespace OrleansSiloHost
 {
@@ -55,7 +55,7 @@ namespace OrleansSiloHost
                 .AddPlacementDirector<PlacedPlacement, PlacedPlacementDirector>()
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(MapperTestGrain).Assembly).WithReferences())
                 .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(Reducer).Assembly).WithReferences())
-                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(PlacementHolder).Assembly).WithReferences())
+                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(Placement).Assembly).WithReferences())
                 .ConfigureLogging(logging => logging.AddConsole())
                 .UsePerfCounterEnvironmentStatistics()
                                     .ConfigureServices(services =>
@@ -63,8 +63,7 @@ namespace OrleansSiloHost
                                         // Workaround for https://github.com/dotnet/orleans/issues/4129
                                         services.AddSingleton(cp => cp.GetRequiredService<IHostEnvironmentStatistics>() as ILifecycleParticipant<ISiloLifecycle>);
                                     })
-                .AddMemoryGrainStorageAsDefault()
-                .AddStartupTask<MonitoringStartupTask>();
+                .AddMemoryGrainStorageAsDefault();
 
             var host = builder.Build();
             await host.StartAsync();
